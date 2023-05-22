@@ -1,0 +1,58 @@
+<h1>{{ section.setting.heading }}</h1>
+<div class="customContainer">
+  <div class="customContainer_slide">
+    <h2 class="customContainer_title">photo label</h2>
+    <div class="customContainer_image">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0563/4883/5925/t/10/assets/puma-256.png?v=1684709381"
+      />
+    </div>
+    <p>Text about photo</p>
+  </div>
+</div>
+  <style>
+    .customContainer {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 1em
+      display: flex;
+      gap: 1em;
+    }
+    .customContainer_slide {
+      padding: 1em;
+      -webkit-box-shadow: 0px 10px 13px -7px #787272,
+        0px -1px 23px -3px rgba(0, 0, 0, 0.52);
+      box-shadow: 0px 10px 13px -7px #888686,
+        0px -1px 23px -3px rgba(125, 123, 123, 0.52);
+    }
+    .customContainer_title {
+    }
+    .customContainer_image img{
+      width: 10vw;
+    }
+  </style>
+      
+
+{% schema %}
+  {
+    "name": "Logos",
+    "settings": [
+      {
+        "type" : "text",
+        "id" : "heading",
+        "label" : "Heading",
+        "default" : "My Custom Heading"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Logos"
+      }
+    ]  
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
